@@ -330,7 +330,7 @@
         </div>
 
         <div class="col-lg-8">
-          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <form action="https://formspree.io/f/xljrndyj" method="POST" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
 
               <div class="col-md-6">
@@ -361,11 +361,8 @@
               </div>
 
               <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your request has been sent. We will review your domain health and get back to you shortly!</div>
-
-                <button type="submit">Request Deliverability Audit</button>
+                <button type="submit" class="btn btn-warning px-4 py-2 text-dark fw-bold">Request Deliverability Audit</button>
+              </div>
               </div>
 
             </div>
@@ -817,36 +814,43 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="https://formspree.io/f/xljrndyj" method="POST" class="php-email-form"></form>
-              <div class="row gy-4">
+          <form action="https://formspree.io/f/xljrndyj" method="POST">
+            <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
               </div>
-            </form>
-          </div><!-- End Contact Form -->
+
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Work Email" required>
+              </div>
+
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="website" placeholder="Company Website / Main Domain" required>
+              </div>
+
+              <div class="col-md-6">
+                <select class="form-select" name="service_needed" required>
+                  <option value="" disabled selected>Primary Need...</option>
+                  <option value="Deliverability Audit">Deliverability Audit / Repair</option>
+                  <option value="M365 Infrastructure Setup">Microsoft 365 Setup</option>
+                  <option value="Google Workspace Setup">Google Workspace Setup</option>
+                  <option value="Domain Warming & DNS">DNS Authentication & Domain Warming</option>
+                  <option value="B2B Lead Generation">B2B Lead Generation & Mining</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your current sending volume, tools used (Instantly, Smartlead, Apollo), or deliverability issues..." required></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-warning px-4 py-2 text-dark fw-bold">Request Deliverability Audit</button>
+              </div>
+
+            </div>
+          </form>
+        </div><!-- End Contact Form -->
 
         </div>
 
