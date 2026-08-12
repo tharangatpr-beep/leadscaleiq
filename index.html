@@ -290,24 +290,93 @@
     </div>
 
   </section><!-- End Services Section -->
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
+    <!-- ======= Call To Action & Contact Section ======= -->
+  <section id="contact" class="contact section">
 
-      <img src="assets/img/cta-bg.jpg" alt="">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Audit Your Deliverability</h2>
+      <p>Ready to Scale Outbound Without Spam Risks?</p>
+    </div><!-- End Section Title -->
 
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4">
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>contact@leadscaleiq.com</p>
             </div>
-          </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-clock flex-shrink-0"></i>
+            <div>
+              <h3>Turnaround Time</h3>
+              <p>Infrastructure Setups: 24-48 Hours</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-shield-check flex-shrink-0"></i>
+            <div>
+              <h3>Guarantee</h3>
+              <p>100% SPF, DKIM, DMARC Authentication</p>
+            </div>
+          </div><!-- End Info Item -->
         </div>
+
+        <div class="col-lg-8">
+          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" class="form-control" name="email" placeholder="Your Work Email" required="">
+              </div>
+
+              <div class="col-md-6">
+                <input type="text" class="form-control" name="website" placeholder="Company Website / Main Domain" required="">
+              </div>
+
+              <div class="col-md-6">
+                <select class="form-select" name="service_needed" required="">
+                  <option value="" disabled selected>Primary Need...</option>
+                  <option value="Deliverability Audit">Deliverability Audit / Repair</option>
+                  <option value="M365 Infrastructure Setup">Microsoft 365 Setup</option>
+                  <option value="Google Workspace Setup">Google Workspace Setup</option>
+                  <option value="Domain Warming & DNS">DNS Authentication & Domain Warming</option>
+                  <option value="B2B Lead Generation">B2B Lead Generation & Mining</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your current sending volume, tools used (Instantly, Smartlead, Apollo), or deliverability issues..." required=""></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your request has been sent. We will review your domain health and get back to you shortly!</div>
+
+                <button type="submit">Request Deliverability Audit</button>
+              </div>
+
+            </div>
+          </form>
+        </div><!-- End Contact Form -->
+
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </div>
+
+  </section><!-- End Contact Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
